@@ -580,6 +580,6 @@ class rabbitmq (
   -> Class['rabbitmq::service']
   -> Class['rabbitmq::management']
 
-  # Make sure the various providers have their requirements in place.
+  # Make sure the various providers have their requirements in place..
   Class['rabbitmq::install'] -> Rabbitmq_plugin<| |> -> Rabbitmq_cluster<| |>
 }
