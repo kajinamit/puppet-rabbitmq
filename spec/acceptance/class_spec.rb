@@ -15,7 +15,7 @@ describe 'rabbitmq class:' do
   context 'default class inclusion' do
     let(:pp) do
       <<-EOS
-      class { 'erlang': repo_source => 'packagecloud' } ->
+      class { 'erlang': } ->
       class { 'rabbitmq': }
       EOS
     end
